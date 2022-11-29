@@ -1,0 +1,40 @@
+.progress.active .progress-bar {
+  -webkit-transition: none !important;
+  transition: none !important;
+}
+
+.contact-div {
+  height: 210px;
+  background-color: #131a36;
+}
+
+.sect-img-flex {
+  width: 285px;
+  height: 360px;
+  object-fit: cover;
+  background-color: #fafafa;
+  /* position: relative; */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* background-image: url(../images/smal-logo/address.svg); */
+  transition-property: all;
+  transition-duration: 3s;
+  transition-delay: 1.5s;
+}
+.sect-img-flex:hover .hover-p {
+  background-color: #131a36;
+  width: 285px;
+  height: 360px;
+  display: block;
+}
+.hover-p {
+  width: 285px;
+  height: 360px;
+  background-color: #15263e;
+  /* position: absolute; */
+  display: none;
+  font-size: 14px;
+  color: #f0f0f0;
+  display: none;
+}
