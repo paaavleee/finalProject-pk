@@ -232,8 +232,6 @@
   align-items: center;
   flex-direction: column;
   justify-content: space-evenly;
-  transition-property: all;
-  transition-duration: 2s;
 }
 .sect-img-flex:hover .hover-p {
   background-color: #131a36;

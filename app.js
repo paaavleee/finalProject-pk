@@ -36,7 +36,6 @@ function startAutoSlidingFn() {
 	sliderIntervalId = setInterval(nextSlide, 5000);
 }
 
-
 function initSlider() {
     activeIndecFun();
     startAutoSlidingFn();
@@ -56,14 +55,4 @@ initSlider();
 //     console.log('scolled')
 //     scrollElement();
 // })
-
-phoneImg.classList.add("red");
-
-function mouseOut (e){
-    e.target.classList.toggle("red") 
-}
-
-
-
-phoneImg.addEventListener('click', mouseOut );
 
