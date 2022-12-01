@@ -187,6 +187,8 @@
   font-size: 14px;
 }
 
+/* 3sectionnnnnn */
+
 .sect-all-img {
   margin-top: 5%;
   display: grid;
@@ -235,7 +237,106 @@
 }
 .sect-img-flex:hover .hover-p {
   background-color: #131a36;
-  width: 285px;
-  height: 360px;
+  /*width: 285px;
+  height: 360px;*/
+  transition-property: all;
+  transition-duration: 2s;
   display: block;
+}
+
+.recommendation {
+  background-image: url(../images/drive-download-20221201T090844Z-001/clip.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 570px;
+  width: 100%;
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 10%;
+}
+
+.recomen-div-p {
+  max-width: 497px;
+  width: 100%;
+  font-size: 15px;
+  font-family: "Muli";
+  margin-right: 2%;
+}
+
+.recomen-img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border: 2px dashed #ffffff;
+  padding: 0.5%;
+  border-radius: 50%;
+}
+
+.rcn-bulet {
+  width: 13px;
+  height: 13.5px;
+
+  background-color: #ffffff;
+  cursor: pointer;
+  margin-bottom: 40%;
+}
+.recomen-user {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  width: 0;
+  transform: scale(0);
+  transition: all 0.6s;
+}
+.recomen-p {
+  width: 100%;
+  font-size: 15px;
+  font-family: "Muli";
+  color: #ffffff;
+}
+
+.recomen-name {
+  display: flex;
+  flex-direction: column;
+  width: 29%;
+  align-items: flex-start;
+  margin-left: 3%;
+}
+
+.recomen-quote {
+  width: 39px;
+  height: 26px;
+  margin-bottom: 15%;
+}
+.recomen-h4 {
+  width: 13px;
+  color: #e93656;
+}
+.recomen-pp {
+  font-size: 28px;
+  font-family: "Glacial Indifference";
+  color: #ffffff;
+}
+
+.recomen-user.appear {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  width: 100%;
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}
+.recomen-bulet {
+  margin-right: 3%;
+}
+.rcn-bulet:hover {
+  background-color: #e93656;
 }
