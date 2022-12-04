@@ -5,6 +5,25 @@ const progressSpan = document.querySelector(".progress-span");
 const phoneImg = document.querySelectorAll(".phone-img");
 const recomenUser = document.querySelectorAll(".recomen-user");
 const rcnBulet = document.querySelectorAll(".rcn-bulet");
+const navLi = document.querySelectorAll(".nav-li");
+const navA = document.querySelectorAll(".nav-a");
+const idWork = document.querySelector("#idWork");
+const idMockup = document.querySelector("#idMockup");
+const idPsd = document.querySelector("#idPsd");
+const idLOgo = document.querySelector("#idLOgo");
+const idPresen = document.querySelector("#idPresen");
+const idIcon = document.querySelector("#idIcon");
+const navbarInfo = document.querySelectorAll(".navbar-info");
+const navbarImg = document.querySelectorAll(".navbar-img");
+const formulaO = document.querySelector(".f1");
+const forImg2 = document.querySelector(".f2");
+const idWorkImg = document.querySelector("#idWork-img");
+
+function navbarFun() {
+  navLi.forEach((el, index) => {
+    console.log(el);
+  });
+}
 
 let activeIndex = 0;
 
@@ -82,3 +101,50 @@ function recomenNextUser() {
   nextBulet();
 }
 recomenNextUser();
+
+// let nav = 0;
+
+// function navbarFunActive() {
+//   navA.forEach((el,index) =>{
+//     if(nav ===index) {
+//       el.classList.add("appear")
+//     }else{
+//       el.classList.remove("appear")
+//     }
+//   })
+// }
+let nav = 0;
+
+// function navbarFun() {
+//   navbarImg.forEach((el, index) => {
+//     if (nav === index) {
+//       el.classList.add("opaci");
+//     } else {
+//       el.classList.remove("opaci");
+//     }
+//   });
+// }
+
+// idWork.addEventListener("click", () => {
+//   console.log(111111);
+//   idWorkImg.classList.toggle("opaci");
+// });
+
+// function navbarFun() {
+//   navbarImg.forEach((el, index) => {
+//     if (nav === index) {
+//       idWork.addEventListener("click", () => {
+//         console.log(111111);
+//         idWorkImg.classList.toggle("opaci");
+//       });
+//     } else {
+//       el.classList.add("noneimg");
+//     }
+//   });
+// }
+// navbarFun();
+
+// idWork.addEventListener("click", () => {
+//   console.log(111111);
+//   idWorkImg.classList.toggle("opaci");
+// });
