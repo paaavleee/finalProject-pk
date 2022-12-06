@@ -144,7 +144,45 @@ let nav = 0;
 // }
 // navbarFun();
 
-// idWork.addEventListener("click", () => {
-//   console.log(111111);
-//   idWorkImg.classList.toggle("opaci");
+// idWork.addEventListener("click", function () {
+//   //let pressedItem = document.getElementById(idWork);
+//   console.log(1234);
+//   // navbarInfo.forEach((el, index) => {
+//   //   el.classList.add("opaci");
+//   // });
+//   // idWorkImg.classList.toggle("opaci");
 // });
+
+// 6 seqciaaaa xelovnebis nimushi:)
+
+navLi.forEach((el) =>
+  el.addEventListener("click", (e) => {
+    let pressedItemID = e.target.getAttribute("id");
+    if (pressedItemID != "idAll") {
+      showReferenceImage(pressedItemID);
+    } else {
+      showAllImages();
+    }
+  })
+);
+
+function showReferenceImage(itemID) {
+  let activeImage = itemID + "-img";
+  //console.log(activeImage);
+
+  navbarInfo.forEach((el) => {
+    let x = el.getAttribute("id");
+    console.log(x);
+    if (activeImage != x) {
+      el.classList.add("opaci");
+    } else {
+      el.classList.remove("opaci");
+    }
+  });
+}
+
+function showAllImages() {
+  navbarInfo.forEach((el) => {
+    el.classList.remove("opaci");
+  });
+}

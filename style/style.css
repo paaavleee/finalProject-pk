@@ -227,15 +227,13 @@ ul {
   display: none;
   font-size: 14px;
   color: #f0f0f0;
-  display: none;
-  top: 5px;
 }
 .sect-img-flex {
   width: 285px;
   height: 360px;
   object-fit: cover;
   background-color: #fafafa;
-  /* position: relative; */
+
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -247,7 +245,19 @@ ul {
   height: 360px;*/
   transition-property: all;
   transition-duration: 2s;
-  display: block;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.hover-p-h3 {
+  font-size: 22px;
+  font-family: "Glacial Indifference";
+  margin-bottom: 8%;
+}
+.hover-p-p {
+  font-size: 14px;
+  font-family: "Muli";
 }
 
 /* 5sectiaon */
@@ -379,11 +389,13 @@ ul {
 }
 .nav-li {
   margin-bottom: 25%;
+  cursor: pointer;
 }
 .navbar-info {
   background-color: #555555;
   width: 300.01px;
   height: 350px;
+  position: relative;
 }
 .navbar-info-grey {
   width: 300.01px;
@@ -408,15 +420,169 @@ ul {
   opacity: 0;
 } */
 .opaci {
-  opacity: 1;
+  opacity: 0;
 }
 
 #idWork {
   cursor: pointer;
 }
-
-.noneimg {
-  opacity: 0;
+.navbar-hover {
+  max-width: 300.01px;
+  width: 100%;
+  height: 350px;
+  position: absolute;
+  background-color: #000000;
+  display: none;
+  top: 0;
 }
 
+.navbar-info:hover .navbar-hover {
+  background-color: #000000;
+  opacity: 0.8;
+  max-width: 300.01px;
+  width: 100%;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.navbar-hover-h5 {
+  color: #dddddd;
+  font-size: 11px;
+  font-family: "Muli";
+  margin: 4%;
+}
+.navbar-hover-h2 {
+  color: #ffffff;
+  font-size: 23px;
+  font-family: "Glacial Indifference";
+}
+.navbar-hover-img {
+  max-width: 14px;
+  width: 100%;
+  height: 12px;
+  object-fit: cover;
+  margin: 4%;
+}
+/* .noneimg {
+  opacity: 0;
+} */
+
 /* 7 section */
+
+.Latest-articles-main-div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10%;
+}
+
+.Latest-articles-first-all-info {
+  display: flex;
+  justify-content: flex-end;
+}
+.Latest-articles-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 4%;
+  margin-top: 12%;
+}
+.Latest-articles-title-h5 {
+  font-size: 13px;
+  color: #2ed279;
+  font-family: "Glacial Indifference";
+}
+.Latest-articles-title-h1 {
+  font-size: 70px;
+  font-family: "Glacial Indifference";
+}
+.Latest-articles-first-left-img {
+  max-width: 600px;
+  width: 100%;
+  height: 590px;
+  background-color: #fafafa;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+.Latest-articles-smal-firs-img {
+  max-width: 29px;
+  width: 100%;
+  height: 34px;
+  object-fit: cover;
+  background-color: #f0f0f0;
+  margin-bottom: 4%;
+}
+.Latest-articles-first-left-h5 {
+  font-size: 14px;
+  font-family: "Muli";
+  margin-bottom: 4%;
+}
+.Latest-articles-first-left-h2 {
+  font-size: 40px;
+  font-family: "Glacial Indifference";
+  margin-bottom: 4%;
+}
+.Latest-articles-first-centry-img {
+  max-width: 123px;
+  width: 100%;
+  height: 590px;
+  background-color: #15263e;
+  display: flex;
+  align-items: center;
+}
+.Latest-articles-first-centry-num {
+  color: #e93656;
+  font-size: 30px;
+  transform: rotate(270deg);
+  font-family: "Glacial Indifference";
+  font-size: 25px;
+}
+/* .Latest-articles-first-right-img {
+  max-width: 950px;
+  width: 100%;
+  height: 590px;
+} */
+
+.Latest-articles-first-right-img-info {
+  max-width: 550px;
+  width: 100%;
+  height: 590px;
+  object-fit: cover;
+}
+.Latest-articles-first-left-p {
+  max-width: 569px;
+  width: 80%;
+}
+
+.ragacaaaaa {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.Latest-articles-second-all {
+  display: flex;
+}
+.Latest-articles-second-right-img-info {
+  max-width: 730px;
+  width: 100%;
+  height: 590px;
+  object-fit: cover;
+}
+.Latest-articles-smal-second-img {
+  max-width: 35px;
+  width: 100%;
+  height: 35px;
+  object-fit: cover;
+  margin-bottom: 5%;
+}
+.Latest-articles-second-right-img {
+  background: #fafafa;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* 8sectiaaaa */
