@@ -15,8 +15,6 @@ const idPresen = document.querySelector("#idPresen");
 const idIcon = document.querySelector("#idIcon");
 const navbarInfo = document.querySelectorAll(".navbar-info");
 const navbarImg = document.querySelectorAll(".navbar-img");
-const formulaO = document.querySelector(".f1");
-const forImg2 = document.querySelector(".f2");
 const idWorkImg = document.querySelector("#idWork-img");
 
 function navbarFun() {
@@ -113,18 +111,6 @@ recomenNextUser();
 //     }
 //   })
 // }
-let nav = 0;
-
-// function navbarFun() {
-//   navbarImg.forEach((el, index) => {
-//     if (nav === index) {
-//       el.classList.add("opaci");
-//     } else {
-//       el.classList.remove("opaci");
-//     }
-//   });
-// }
-
 // idWork.addEventListener("click", () => {
 //   console.log(111111);
 //   idWorkImg.classList.toggle("opaci");
